@@ -11,6 +11,9 @@
  */
 package problemloesen;
 
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
 import problemloesen.io.IO;
 
 public class Projekt01 {
@@ -20,7 +23,7 @@ public class Projekt01 {
 	 */
 	public static void main(String[] args) {
 
-		IO io = new IO(); 				/* create and init Input/Output */
+		IO io = IO.getInstance(); 				/* create and init Input/Output */
 	}
 
 }

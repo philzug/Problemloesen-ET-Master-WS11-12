@@ -11,7 +11,6 @@ public void actionPerformed(ActionEvent e)
 {
 	//TODO 
 	System.out.println("PearlListner ausgelöst");
-	System.out.println(e.getSource().getClass().getName());
 }
 
 }
