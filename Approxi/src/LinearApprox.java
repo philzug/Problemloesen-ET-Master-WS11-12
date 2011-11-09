@@ -22,9 +22,6 @@ public class LinearApprox
 	static double A[] = new double[1000];  //Globales Array für Koeffizienten des Polynoms
 	static double res=0;                     //Ergebnis des Polynoms	
 
-    /**
-     * Konstruktor für Objekte der Klasse Approx
-     */
     public LinearApprox(int n)  //n ist der Grad des Polynoms
     {
         // Instanzvariable initialisieren
@@ -32,12 +29,6 @@ public class LinearApprox
         
     }
 
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
     public static void main(String[] args) 
 	
     {
