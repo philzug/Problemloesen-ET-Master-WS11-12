@@ -1,11 +1,4 @@
-
-
-/**
- * Beschreiben Sie hier die Klasse Approx.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+package problemloesen.projekt01;
 
 import java.io.BufferedReader;
 import java.io.File;
