@@ -1,3 +1,4 @@
+package problemloesen.projekt01;
 
 public class StringofPerl {
 	static Pointperl list = new Pointperl(0,0,0,0);						//First Head of Pointer List
