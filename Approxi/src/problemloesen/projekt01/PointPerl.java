@@ -1,82 +1,88 @@
 package problemloesen.projekt01;
 
-public class Pointperl {
-	
+import java.util.Collection;
+import java.util.Vector;
+
+public class PointPerl extends Point {
+
 	public int number;
 	public double x;
 	public double y;
 	public double weight;
 	public double min[] = new double[2];
 	public double dxlength;
-	public double length1;  //Länge l zur vorherigen Kugel
-	public double length2;	//Länge l zur nächsten Kugel
-	Pointperl next;
-	Pointperl last;
-	
-	public Pointperl(int number, double x, double y, double weight){
+	public double length1; // Länge l zur vorherigen Kugel
+	public double length2; // Länge l zur nächsten Kugel
+	PointPerl next;
+	PointPerl last;
+
+	public PointPerl(int number, double x, double y, double weight) {
+		this.values = new Vector<Double>(2);
+		this.values.add(new Double(x));
+		this.values.add(new Double(y));
 		this.number = number;
 		this.x = x;
 		this.y = y;
 		this.weight = weight;
 	}
-	
-	void in(Pointperl z) {	
+
+	void in(PointPerl z) {
 		z.next = next;
 		next = z;
 	}
-	
-	void inend(Pointperl z) {	
+
+	void inend(PointPerl z) {
 		z.last = last;
 		last = z;
 	}
-	
-	Pointperl setnumber(int number){
+
+	PointPerl setnumber(int number) {
 		this.number = number;
 		return this;
 	}
-	
-	int getnumber(){
+
+	int getnumber() {
 		return number;
 	}
-	
-	void setxvalue(double x){
+
+	void setxvalue(double x) {
 		this.x = x;
 	}
-	
-	void setyvalue(double y){
+
+	void setyvalue(double y) {
 		this.y = y;
 	}
-	
-	double getxvalue(){
+
+	double getxvalue() {
 		return this.x;
 	}
-	
-	double getyvalue(){
+
+	double getyvalue() {
 		return this.y;
 	}
-	
-	void setweight(double weight){
-		
-		this.weight = weight;			
+
+	void setweight(double weight) {
+
+		this.weight = weight;
 	}
-	
-	double getweight(){
+
+	double getweight() {
 		return this.weight;
 	}
-	
-	void setmin(double min[]){
+
+	void setmin(double min[]) {
 		this.min = min;
 	}
-	
-	double[] getmin(){
+
+	double[] getmin() {
 		return min;
 	}
-	
-	void setdxlength(double dxlength){
+
+	void setdxlength(double dxlength) {
 		this.dxlength = dxlength;
 	}
-	
-	double getdxlength(){
+
+	double getdxlength() {
 		return dxlength;
 	}
 
@@ -95,7 +101,5 @@ public class Pointperl {
 	public void setLength2(double length2) {
 		this.length2 = length2;
 	}
-	
-	
-	
+
 }

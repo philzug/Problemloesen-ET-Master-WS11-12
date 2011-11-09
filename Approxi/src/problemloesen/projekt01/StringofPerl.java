@@ -1,14 +1,14 @@
 package problemloesen.projekt01;
 
 public class StringofPerl {
-	static Pointperl list = new Pointperl(0,0,0,0);						//First Head of Pointer List
-	static Pointperl relist = new Pointperl(0,0,0,0);					//Weiterer Head of Pointer List
-	static Pointperl listend = new Pointperl(0,0,0,0);					//Last Head of Pointer List
-	static Pointperl relistend = new Pointperl(0,0,0,0);				//Weiterer Last Head of Pointer List
+	static PointPerl list = new PointPerl(0,0,0,0);						//First Head of Pointer List
+	static PointPerl relist = new PointPerl(0,0,0,0);					//Weiterer Head of Pointer List
+	static PointPerl listend = new PointPerl(0,0,0,0);					//Last Head of Pointer List
+	static PointPerl relistend = new PointPerl(0,0,0,0);				//Weiterer Last Head of Pointer List
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void start (String[] args) {
 		
 		int n = 5;				//Anzahl Kugeln
 		double w = 0.001;		//Gewicht pro Kugel in Kg
@@ -24,7 +24,7 @@ public class StringofPerl {
 			
 			b1 = b1+a/(n+1);		//Schrittweite für Startwerte der Positionen der Kugeln
 			b2 = a-b1;
-			list.in(new Pointperl(i,b2,0,0));	//Perlenkette erzeugen
+			list.in(new PointPerl(i,b2,0,0));	//Perlenkette erzeugen
 			System.out.println("b:" + b2);
 		}
 		relist.next = list.next;	//Listenkopfanfang merken

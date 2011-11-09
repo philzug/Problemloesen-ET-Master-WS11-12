@@ -21,9 +21,9 @@ public class Projekt01 {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-
-		IO io = IO.getInstance(); 				/* create and init Input/Output */
-	}
+//	public static void main(String[] args) {
+//
+//		IO io = IO.getInstance(); 				/* create and init Input/Output */
+//	}
 
 }
